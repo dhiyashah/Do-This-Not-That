@@ -6,9 +6,13 @@ void setup()
 {
   //Display Geometry
   fullScreen();
-  println(displayWidth, displayHeight);
+  println(width, height, displayWidth, displayHeight);
+  String ls="Landscape or Square", p="portrait", DO="DisplayOrientation", instruct="Bruhh, turn your phone";
   int appWidth = displayWidth;
   int appHeight = displayHeight;
+  String orientation = ( appWidth >= appHeight ) ? ls : p ; //Ternary Operator
+  println (DO, orientation );
+  println(appWidth, appHeight);
   //
   /*Population
   buttonX1 = ;
